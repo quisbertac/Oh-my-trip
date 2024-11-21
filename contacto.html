@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Oh My Trip</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">Oh My Trip</a>
+                
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="opiniones.html">Opiniones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="contacto py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">¿Querés revivir tu viaje?</h2>
+                <p class="text-center mb-4">Compartí tu experiencia y ayudá a que otros tengan una travesía memorable.</p>
+                <form class="formulario-contacto row g-3 shadow p-4 bg-light rounded">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="archivo" class="form-label">Envianos tu foto del viaje:</label>
+                        <input type="file" id="archivo" name="archivo" class="form-control">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 mt-4">
+        <p>Oh My Trip 2024 | Todos los derechos reservados</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Políticas de privacidad</a></li>
+            <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+            <li class="list-inline-item"><a href="#"><img src="imagenes/fb.jpg" alt="Facebook" class="img-fluid" style="width: 24px;"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="imagenes/ig.jpg" alt="Instagram" class="img-fluid" style="width: 24px;"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="imagenes/X.jpg" alt="X" class="img-fluid" style="width: 24px;"></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

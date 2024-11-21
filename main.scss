@@ -1,0 +1,161 @@
+.banner {
+   
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight:lighter;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: $header-titulo;
+    margin-bottom: 20px;
+}
+
+.banner .btn-primary {
+    background-color: $color-boton;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+/* Secciones generales */
+.nosotros,
+.destinos,
+.opiniones,
+.contacto {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: $color-fondo-cuadro;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Nosotros */
+main.container{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./imagenes/mar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.nosotros h2 {
+  font-size: 32px;
+  text-align: center;
+  color: $color-uno;
+  margin-bottom: 15px;
+}
+
+.nosotros p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-hover;
+}
+
+/* Sección Destinos */
+
+.destino-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.destinos h2 {
+  font-size: $titulo;
+  color: $color-uno;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-destinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.destino-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px $navbar;
+}
+@media (min-width: 768px) {
+  .grid-destinos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Sección Opiniones*/
+.opinion-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.opiniones {
+  background-color: $color-fondo-cuadro;
+}
+
+.opiniones h2 {
+  font-size: 30px;
+  color: $color-hover;
+  margin-bottom: 20px;
+}
+
+.opinion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px $navbar;
+}
+
+
+@media (min-width: 768px) {
+    .opiniones .card {
+        margin: 0 10px;};
+    }
+
+
+/* Sección Contacto */
+.contacto h2 {
+  font-size: $titulo;
+  color: $color-uno;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-contacto input[type="submit"] {
+  background-color: $color-uno;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: $color-dos;
+}

@@ -1,0 +1,50 @@
+/* General */
+
+body {
+    font-family:$main-font;
+    margin: 0;
+    padding: 0;
+    background-color: #ebdffc;
+   }
+ 
+ body.inicio{
+     background-image: url(./imagenes/globos.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+ }
+ 
+ /* Navbar */
+ .navbar-light{
+     background-color: $navbar;
+ }
+ 
+ .navbar-brand {
+     font-size: $header-titulo;
+     color: $color-uno;
+     text-transform: none;
+     font-family:'Quiscksand';
+     font-weight:bold;
+ }
+ 
+ .navbar-brand:hover{
+     color: $color-dos;
+ }
+ 
+ .navbar-nav .nav-link {
+     color: $color-uno;
+     font-weight:550;
+     font-size: $Subtitulo;
+     transition: all 0.3s ease;
+ }
+ 
+ .navbar-nav .nav-link:hover {
+     color: $color-hover;
+     transform: translateX(15px);
+ }
+ 
+ @media (min-width: 768px) {
+   .navbar-nav .nav-link:hover {
+     transform: scale(1.1);
+ }
+ }
