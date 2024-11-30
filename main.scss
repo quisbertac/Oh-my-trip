@@ -28,6 +28,7 @@
 }
 
 /* Secciones generales */
+
 .nosotros,
 .destinos,
 .opiniones,
@@ -42,15 +43,22 @@
 
 /* Sección Nosotros */
 main.container{
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-image: url(./imagenes/mar.jpg);
+  background-image: url(./imagenes/barco.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nosotros{
+  background-color: $color-fondo-nosotros;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
  
 .nosotros h2 {

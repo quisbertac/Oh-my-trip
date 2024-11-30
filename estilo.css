@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Colores*/
+/*Fuemtes*/
 /* General */
 body {
   font-family: "Quicksand", serif;
@@ -48,7 +50,6 @@ body.inicio {
     transform: scale(1.1);
   }
 }
-/* Banner principal */
 .banner {
   height: 700px;
   display: flex;
@@ -92,15 +93,22 @@ body.inicio {
 
 /* Sección Nosotros */
 main.container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-image: url(./imagenes/mar.jpg);
+  background-image: url(./imagenes/barco.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nosotros {
+  background-color: rgba(245, 245, 245, 0.67);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nosotros h2 {
@@ -139,7 +147,7 @@ main.container {
 
 .destino-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(247, 246, 250, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -147,7 +155,7 @@ main.container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Opiniones*/
+/* Sección Opiniones*/
 .opinion-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
@@ -166,10 +174,9 @@ main.container {
 
 .opinion-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(247, 246, 250, 0.2);
 }
 
-/* Ajuste de las tarjetas en dispositivos más grandes */
 @media (min-width: 768px) {
   .opiniones .card {
     margin: 0 10px;
