@@ -10,7 +10,7 @@ body {
 }
 
 body.inicio {
-  background-image: url(./imagenes/globos.jpg);
+  background-image: url(../../imagenes/globos.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -95,7 +95,7 @@ body.inicio {
 main.container {
   height: 100%;
   width: 100%;
-  background-image: url(./imagenes/barco.jpg);
+  background-image: url(../../imagenes/barco.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
